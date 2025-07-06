@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharva Kumkar</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    .font-manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+    .font-raleway {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            raleway: ['Raleway', 'sans-serif'],
+            manrope: ['Manrope-Extralight', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100 dark:bg-zinc-900 text-black dark:text-white font-manrope">
+  <header class="shadow py-6 px-10">
+    <div class="container flex justify-between items-center">
+      <h1>
+        <a href="https://www.instagram.com/_.atharva08._/"
+          class="text-2xl font-bold text-zinc-900 dark:text-white hover:text-neutral-600 hover:dark:text-neutral-400">
+          Atharva Kumkar
+        </a>
+      </h1>
+      <ul class="hidden md:flex space-x-4">
+        <li><a href="mywebsite.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Home</a></li>
+        <li><a href="portfolio.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Portfolio</a></li>
+        <li><a href="#" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Wallpapers</a></li>
+        <li><a href="contactpage.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div>
+    <h2 class="flex justify-start font-bold text-[50px] text-zinc-900 dark:text-white my-[30px] mx-[40px] px-5">McLaren 750s</h2>
+  </div>
+
+  <section class="container mx-[40px]">
+    <div class="flex flex-col">
+      <!-- First Row -->
+      <div class="flex flex-row items-end space-x-4 px-5">
+        <img src="assets/mclaren750s/_MG_0027-01.jpeg" class="w-[25%] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0029-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0025-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0023-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+      </div>
+
+      <!-- Second Row -->
+      <div class="flex flex-row items-start space-x-4 my-[30px] px-5">
+        <img src="assets/mclaren750s/_MG_0033-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0030-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0034-01.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all" />
+        <img src="assets/mclaren750s/_MG_0021-01.jpeg" class="w-[25%] hover:scale-105 duration-300 ease-in-out transition-all" />
+      </div>
+    </div>
+  </section>
+
+   <div class="flex justify-center py-5">
+    <a href="portfolio.html">
+<button class="w-[300px] bg-zinc-900 text-white shadow-2xl font-medium py-2 px-4 rounded hover:bg-zinc-800 hover:scale-105 duration-300 transition-all dark:bg-neutral-100 dark:text-neutral-700 hover:dark:text-neutral-100 hover:dark:bg-neutral-700">     
+      Back
+      </button>
+    </a>
+  </div>
+
+ <footer class="bg-zinc-900 dark:bg-neutral-100">
+    <p class="flex justify-center py-5 text-white brightness-90 dark:text-neutral-700 dark:brightness-100 font-semibold animate-pulse duration-500">
+      &copy; 2025 Atharva Kumkar. All rights reserved
+    </p>
+  </footer>
+</body>
+</html>
