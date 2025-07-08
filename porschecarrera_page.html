@@ -32,59 +32,83 @@
 
 <body class="bg-gray-100 dark:bg-zinc-900 text-black dark:text-white font-manrope">
 
-  <header class="shadow py-6 px-10">
-    <div class="container flex justify-between items-center">
-      <h1>
-        <a href="https://www.instagram.com/_.atharva08._/"
-          class="text-2xl font-bold text-zinc-900 dark:text-white hover:text-neutral-600 hover:dark:text-neutral-400">
-          Atharva Kumkar
-        </a>
-      </h1>
-      <ul class="hidden md:flex space-x-4">
-        <li><a href="mywebsite.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Home</a></li>
-        <li><a href="portfolio.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Portfolio</a></li>
-        <li><a href="#" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Wallpapers</a></li>
-        <li><a href="contactpage.html" class="text-zinc-900 dark:text-white font-bold hover:text-neutral-600 hover:dark:text-neutral-400">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+  <header class="shadow py-6 px-6 md:px-10">
+  <div class="container mx-auto flex flex-wrap justify-between items-center">
+    <h1 class="text-2xl font-bold text-neutral-700 dark:text-neutral-100">
+      <a href="https://www.instagram.com/_.atharva08._/" class="hover:text-neutral-900 hover:dark:text-neutral-400">
+        Atharva Kumkar
+      </a>
+    </h1>
 
-  <div>
-    <h2 class="flex justify-start font-bold text-[50px] text-zinc-900 dark:text-white my-[30px] mx-[40px] px-5">
-      Porsche 911 Carerra
-    </h2>
+    <!-- Hamburger Button -->
+    <button class="md:hidden text-neutral-700 dark:text-neutral-100 focus:outline-none" onclick="toggleMenu()">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul id="menu" class="w-full md:w-auto mt-4 md:mt-0 hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center text-center md:text-left">
+      <li><a href="mywebsite.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Home</a></li>
+      <li><a href="portfolio.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Portfolio</a></li>
+      <li><a href="wallpaper.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Wallpapers</a></li>
+      <li><a href="contactpage.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
+     <div class="px-6 md:px-12 mt-6">
+    <h2 class="flex justify-center md:justify-center text-4xl md:text-5xl font-bold text-zinc-900 dark:text-neutral-100 mb-6">Porsche 911 Carerra</h2>
   </div>
 
-  <section class="container mx-[40px]">
-    <div class="flex flex-col">
-      <div class="flex flex-row items-end space-x-4 px-5">
-        <img src="assets/Porsche911carerra/_MG_8286-02.jpeg" class="w-[25%] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8273-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8281-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8283-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
+  <!-- Gallery -->
+  <section class="container mx-auto px-6 md:px-10">
+    <div class="flex flex-col space-y-6">
+      <div class="flex flex-wrap gap-4 justify-center">
+      <img src="assets/Porsche911carerra/_MG_8286-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8273-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8281-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8283-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
       </div>
-
-      <div class="flex flex-row items-start space-x-4 my-[30px] px-5">
-        <img src="assets/Porsche911carerra/_MG_8287-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8272-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8268-02.jpeg" class="w-[300px] hover:scale-105 duration-300 ease-in-out transition-all">
-        <img src="assets/Porsche911carerra/_MG_8266-02.jpeg" class="w-[25%] hover:scale-105 duration-300 ease-in-out transition-all">
+      <div class="flex flex-wrap gap-4 justify-center">
+      <img src="assets/Porsche911carerra/_MG_8287-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8272-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8268-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
+      <img src="assets/Porsche911carerra/_MG_8266-02.jpeg" loading="lazy" class="w-full sm:w-[48%] md:w-[22%] rounded-lg hover:scale-105 transition duration-300" />
       </div>
     </div>
   </section>
 
-   <div class="flex justify-center py-5">
+<div class="flex justify-center py-10">
     <a href="portfolio.html">
-<button class="w-[300px] bg-zinc-900 text-white shadow-2xl font-medium py-2 px-4 rounded hover:bg-zinc-800 hover:scale-105 duration-300 transition-all dark:bg-neutral-100 dark:text-neutral-700 hover:dark:text-neutral-100 hover:dark:bg-neutral-700">     
-      Back
+      <button class="w-[250px] bg-zinc-900 dark:bg-neutral-100 dark:text-neutral-700 text-white shadow-2xl font-medium py-2 px-4 rounded hover:bg-zinc-800 hover:dark:bg-zinc-600 hover:dark:text-white hover:scale-105 duration-300 transition-all">
+        Back
       </button>
     </a>
   </div>
 
- <footer class="bg-zinc-900 dark:bg-neutral-100">
-    <p class="flex justify-center py-5 text-white brightness-90 dark:text-neutral-700 dark:brightness-100 font-semibold animate-pulse duration-500">
+  <footer class="bg-zinc-900 dark:bg-neutral-100">
+    <p class="text-center py-5 text-white brightness-90 dark:text-neutral-700 dark:brightness-100 font-semibold animate-pulse duration-500">
       &copy; 2025 Atharva Kumkar. All rights reserved
     </p>
   </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("mobile-menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>

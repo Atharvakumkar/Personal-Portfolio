@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,7 @@
         extend: {
           fontFamily: {
             raleway: ['Raleway', 'sans-serif'],
-            manrope: ['Manrope-Extralight', 'sans-serif'],
+            manrope: ['Manrope', 'sans-serif'],
           },
         },
       },
@@ -32,52 +31,71 @@
 </head>
 
 <body class="bg-gray-50 dark:bg-zinc-900 text-black dark:text-white font-manrope">
-  <header class="shadow py-6 px-10">
-    <div class="container flex justify-between items-center">
-      <h1><a href="https://www.instagram.com/_.atharva08._/" class="text-2xl font-bold text-neutral-700 dark:text-neutral-100 hover:text-neutral-900 hover:dark:text-neutral-400">Atharva Kumkar</a></h1>
-      <ul class="hidden md:flex space-x-4">
-        <li><a href="mywebsite.html" class="text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Home</a></li>
-        <li><a href="portfolio.html" class="text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Portfolio</a></li>
-        <li><a href="#" class="text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Wallpapers</a></li>
-        <li><a href="contactpage.html" class="text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+  <header class="shadow py-6 px-6 md:px-10">
+  <div class="container mx-auto flex flex-wrap justify-between items-center">
+    <h1 class="text-2xl font-bold text-neutral-700 dark:text-neutral-100">
+      <a href="https://www.instagram.com/_.atharva08._/" class="hover:text-neutral-900 hover:dark:text-neutral-400">
+        Atharva Kumkar
+      </a>
+    </h1>
 
-  <div id="left" class="flex justify-center h-[600px] px-10 py-10 relative">
-    <div class="relative w-[600px] h-[550px]">
-      <img src="assets/Huracan 2/IMG_0121.jpg" class="absolute top-0 left-30 h-[550px] rounded-2xl shadow-2xl z-20 hover:scale-110 duration-300 transition-all" />
-      <img src="assets/Huracan 2/IMG_0125.jpg" class="absolute top-10 -left-40 h-[450px] rounded-2xl shadow-2xl z-10 brightness-75 hover:brightness-100 hover:scale-140 transition-all duration-300 hover:z-30" />
-      <img src="assets/Huracan 2/IMG_0124.jpg" class="absolute top-10 left-120 h-[450px] rounded-2xl shadow-2xl z-10 brightness-75 hover:brightness-100 hover:scale-140 transition-all duration-300 hover:z-30" />
-    </div>
+    <!-- Hamburger Button -->
+    <button class="md:hidden text-neutral-700 dark:text-neutral-100 focus:outline-none" onclick="toggleMenu()">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <ul id="menu" class="w-full md:w-auto mt-4 md:mt-0 hidden md:flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 items-center text-center md:text-left">
+      <li><a href="mywebsite.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Home</a></li>
+      <li><a href="portfolio.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Portfolio</a></li>
+      <li><a href="wallpaper.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Wallpapers</a></li>
+      <li><a href="contactpage.html" class="block text-neutral-700 dark:text-neutral-100 font-bold hover:text-neutral-900 hover:dark:text-neutral-400">Contact</a></li>
+    </ul>
   </div>
+</header>
 
-  <div>
-    <h2 class="flex justify-center font-bold text-[50px] text-zinc-900 dark:text-neutral-100 my-[30px] mx-[40px] px-5 py-5">Lamborghini Huracan</h2>
-  </div>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+  }
+</script>
 
-  <div id="left1" class="flex justify-center h-[600px] px-10 py-10 relative">
-    <div class="relative w-[600px] h-[550px]">
-      <img src="assets/Huracan 2/IMG_0100-1.png" class="absolute top-0 left-30 h-[550px] rounded-2xl shadow-2xl z-20 hover:scale-110 duration-300 transition-all" />
-      <img src="assets/Huracan 2/IMG_0131.jpg" class="absolute top-10 -left-40 h-[450px] rounded-2xl shadow-2xl z-10 brightness-75 hover:brightness-100 hover:scale-140 transition-all duration-300 hover:z-30" />
-      <img src="assets/Huracan 2/IMG_0127.jpg" class="absolute top-10 left-120 h-[450px] rounded-2xl shadow-2xl z-10 brightness-75 hover:brightness-100 hover:scale-140 transition-all duration-300 hover:z-30" />
-    </div>
-  </div>
+   <h2 class="text-center font-bold text-[40px] text-zinc-900 dark:text-neutral-100 my-10">Lamborghini Huracan</h2>
 
-  <div>
-    <h2 class="flex justify-center font-bold text-[30px] text-zinc-900 dark:text-neutral-100 mx-[40px] my-[10px]">Looking for Wallpapers?</h2>
-  </div>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-10">
+  <img src="assets/Huracan 2/IMG_0121.jpg" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+  <img src="assets/Huracan 2/IMG_0125.jpg" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+  <img src="assets/Huracan 2/IMG_0124.jpg" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+</section>
 
-   <div class="flex justify-center py-5">
+<!-- Title -->
+
+
+<!-- Responsive Image Section 2 -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-10">
+  <img src="assets/Huracan 2/IMG_0100-1.png" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+  <img src="assets/Huracan 2/IMG_0131.jpg" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+  <img src="assets/Huracan 2/IMG_0127.jpg" loading="lazy" class="w-full h-auto rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300" />
+</section>
+
+
+  <h2 class="text-center font-bold text-[30px] text-zinc-900 dark:text-neutral-100 my-4">Looking for Wallpapers?</h2>
+
+  <div class="flex justify-center py-5">
     <a href="wallpaper.html">
-<button class="w-[300px] bg-zinc-900 text-white shadow-2xl font-medium py-2 px-4 rounded hover:bg-zinc-800 hover:scale-105 duration-300 transition-all dark:bg-neutral-100 dark:text-neutral-700 hover:dark:text-neutral-100 hover:dark:bg-neutral-700">     
-      Download now
+      <button class="w-[300px] bg-zinc-900 text-white font-medium py-2 px-4 rounded shadow-2xl hover:bg-zinc-800 hover:scale-105 transition-transform duration-300 dark:bg-neutral-100 dark:text-neutral-700 hover:dark:bg-neutral-700 hover:dark:text-neutral-100">
+        Download now
       </button>
     </a>
   </div>
 
- <footer class="bg-zinc-900 dark:bg-neutral-100">
-    <p class="flex justify-center py-5 text-white brightness-90 dark:text-neutral-700 dark:brightness-100 font-semibold animate-pulse duration-500">
+  <footer class="bg-zinc-900 dark:bg-neutral-100 mt-10">
+    <p class="text-center py-5 text-white dark:text-neutral-700 font-semibold animate-pulse">
       &copy; 2025 Atharva Kumkar. All rights reserved
     </p>
   </footer>
