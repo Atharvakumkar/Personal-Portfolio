@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-Source code for the personal portfolio website of Atharva Kumkar — a photographer and videographer specialising in automotive photography. The site presents individual galleries for each vehicle shoot, a portfolio overview, a wallpapers section, and a contact page. It is a fully static site with no build step, deployed on Netlify.
+This is the source code for my personal portfolio website. I am a photographer and videographer with a passion for automotive photography. The site presents individual galleries for each of my vehicle shoots, a portfolio overview, a wallpapers section, and a contact page. It is a fully static site with no build step, deployed on Netlify.
 
 Live site: https://atharvakumkar.netlify.app
 
@@ -22,9 +22,9 @@ Live site: https://atharvakumkar.netlify.app
 
 | File | Description |
 |---|---|
-| `mywebsite.html` | Home page; hero section with profile image, intro text, WhatsApp contact button, and a featured gallery grid of three vehicles |
-| `portfolio.html` | Full portfolio overview listing all shoot projects |
-| `wallpaper.html` | Downloadable automotive wallpapers section |
+| `mywebsite.html` | Home page; hero section with my profile image, intro text, WhatsApp contact button, and a featured gallery grid of three vehicles |
+| `portfolio.html` | Full overview of all my shoot projects |
+| `wallpaper.html` | Downloadable automotive wallpapers from my shoots |
 | `contactpage.html` | Contact form and direct contact links |
 
 **Individual vehicle gallery pages**
@@ -68,7 +68,7 @@ Personal-Portfolio/
 |-- hondacbr_page.html          # Honda CBR gallery
 |-- jawa_page.html              # Jawa gallery
 |
-|-- assets/                     # Photography assets: images and media files
+|-- assets/                     # My photography assets: images and media files
 |-- my-project/                 # Sub-project directory
 |-- netlify.toml                # Netlify deployment configuration
 |-- .gitattributes
@@ -102,7 +102,7 @@ Personal-Portfolio/
 
 ## Running Locally
 
-The site has no dependencies to install and no build process. Open any HTML file directly in a browser:
+There are no dependencies to install and no build process. Open any HTML file directly in a browser:
 
 ```bash
 # Clone the repository
@@ -129,7 +129,7 @@ Then open `http://localhost:3000/mywebsite.html` in a browser.
 
 The site is deployed to Netlify. Any push to the `main` branch triggers an automatic deployment. The `netlify.toml` file at the root contains the deployment configuration.
 
-To deploy a fork manually via the Netlify CLI:
+To deploy a fork of this site manually via the Netlify CLI:
 
 ```bash
 npm install -g netlify-cli
